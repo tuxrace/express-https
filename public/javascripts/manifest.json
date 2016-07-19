@@ -1,0 +1,16 @@
+{
+"name":"test",
+"short_name":"test",
+"theme_color":"#ccc",
+"background_color":"#eee",
+"start_url": "./",
+"scope:":"/",
+"icons": [
+  {
+    "src": "/images/cal.png",
+	"sizes":"144x144",
+	"type":"image/png"
+  }
+]
+
+}
