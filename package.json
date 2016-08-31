@@ -1,6 +1,7 @@
 {
-  "name": "sw",
+  "name": "express-https",
   "version": "0.0.0",
+  "author": "Gerard Banasig",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"

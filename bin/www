@@ -21,21 +21,22 @@ var options = {
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3333');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
-//var server = https.createServer(options, app).listen(httpsPort);
+//var server = http.createServer(app);
+var server = https.createServer(options, app).listen(httpsPort);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+//server.listen(port);
+server.listen(httpsPort);
 server.on('error', onError);
 server.on('listening', onListening);
 
@@ -97,4 +98,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log('Listening on ' + bind);
 }
